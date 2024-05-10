@@ -1,6 +1,6 @@
 <?php
 
-$uri = "mysql://avnadmin:AVNS_HsCLSKy0nSzYkink6zK@mysql-20cae9ad-st-d93d.l.aivencloud.com:15874/defaultdb?ssl-mode=REQUIRED";
+$uri = "mysql://avnadmin:AVNS_HsCLSKy0nSzYkink6zK@mysql-20cae9ad-st-d93d.l.aivencloud.com:15874/QUANLYSACH?ssl-mode=REQUIRED";
 
 $fields = parse_url($uri);
 
