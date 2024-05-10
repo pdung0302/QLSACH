@@ -1,6 +1,6 @@
 <?php
 try {
-    // Connect to the database (replace with secure credentials)
+    
     $conn = new PDO("mysql:host=mysql-20cae9ad-st-d93d.l.aivencloud.com;dbname=QUANLYSACH", "avnadmin", "AVNS_HsCLSKy0nSzYkink6zK");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
