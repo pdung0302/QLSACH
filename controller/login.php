@@ -18,11 +18,12 @@ $port = getenv('port');
 
 try {
     $conn = new PDO("mysql:host=$servername;port=$port;dbname=$database", $username, $password);
-    // Thiết lập chế độ báo lỗi và chế độ tùy chỉnh
+    // Set PDO to throw exceptions on error
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 } catch(PDOException $e) {
-    echo "Kết nối cơ sở dữ liệu thất bại: " . $e->getMessage();
+    echo "Connection failed: " . $e->getMessage();
 }
+
 
 // Đăng nhập
 if(isset($_POST['login'])) {
