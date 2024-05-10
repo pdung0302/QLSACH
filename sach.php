@@ -1,9 +1,13 @@
 <?php
+$servername = "mysql-20cae9ad-st-d93d.l.aivencloud.com";
+$username = "avnadmin";
+$password = "AVNS_HsCLSKy0nSzYkink6zK";
+$database = "QUANLYSACH";
+$port = 15874;
 try {
     
-    $conn = new PDO("mysql:host=mysql-20cae9ad-st-d93d.l.aivencloud.com;dbname=QUANLYSACH", "avnadmin", "AVNS_HsCLSKy0nSzYkink6zK");
+    $conn = new PDO("mysql:host=$servername;port=$port;dbname=$database", $username, $password);    
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-
     // Fetch 5 books from the Sach table
     $stmt = $conn->prepare("SELECT * FROM Sach LIMIT 5");
     $stmt->execute();
